@@ -17,14 +17,15 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: 'Stick', sans-serif;
   font-size: 18px;
   line-height: 1.77778;
   font-weight: bold;
   text-decoration: none;
   border: none;
   list-style: none;
-  color: #000;
+  background-color: #161821;
+  color: #fff;
   margin: 0;
 }
 
@@ -121,6 +122,8 @@ button {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+
+
 }
 
 @media screen and (max-width: 1100px) {
@@ -147,6 +150,7 @@ button {
 }
 
 .card {
+  color: #161821;
   background-color: #fff;
   margin-bottom: 20px;
   height: 100%;
@@ -175,7 +179,7 @@ button {
   content: '';
   width: calc(100% - 60px);
   height: 7px;
-  background-color: #fcee21;
+  background-color: #95C4CE;
   position: absolute;
   top: -10px;
   left: 30px;
@@ -239,7 +243,7 @@ button {
 * Color
 *********************/
 .bg-color--keycolor {
-  background-color: #39b54a;
+  background-color: ;
 }
 
 .bg-color--subcolor {
@@ -256,6 +260,7 @@ button {
 .main-title {
   margin: 0;
 }
+
 
 .sub-title {
   text-align: center;
@@ -274,7 +279,7 @@ button {
   line-height: 1.75;
   text-align: center;
   padding: 9px 20px;
-  background-color: #d9e021;
+  background-color: #84A0C6;
   margin: 0 -20px 20px -20px;
 }
 
@@ -292,7 +297,7 @@ button {
 }
 
 .section-title--keycolor {
-  background-color: #39b54a;
+  background-color: #84A0C6;
 }
 
 .section-title--story {
@@ -336,7 +341,7 @@ button {
   display: block;
   text-decoration: none;
   cursor: pointer;
-  background-color: #006837;
+  background-color: #84A0C6;
   color: #fff;
   font-size: 24px;
   line-height: 1.54167;
@@ -346,10 +351,11 @@ button {
   max-width: 700px;
   margin: 10px auto;
   position: relative;
+  transition: .3s;
 }
 
 .btn:hover {
-  opacity: 0.7;
+  transform: scale(1.1, 1.1);
 }
 
 .btn__arrow {
@@ -409,6 +415,7 @@ button {
 ********************/
 .story__note {
   margin: 0;
+  color: #161821;
 }
 
 .story__note__outer {
