@@ -1,0 +1,32 @@
+/*************************
+* Button
+*************************/
+.btn {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #84A0C6;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.54167;
+  text-align: center;
+  padding: 11.5px;
+  width: calc(100% - 40px);
+  max-width: 700px;
+  margin: 10px auto;
+  position: relative;
+  transition: .3s;
+  &:hover {
+    opacity: 0.7;
+    transform: scale(1.1, 1.1);
+  }
+
+  &__arrow {
+    position: absolute;
+    top: calc(50% - 12px);
+    right: 15px;
+    fill: #fff;
+    width: 12px;
+    height: 24px;
+  }
+}
