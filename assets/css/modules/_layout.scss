@@ -40,8 +40,7 @@
   width: 100%;
 }
 .card {
-  background-color: #fff;
-  color: #161821;
+  background-color: #181a1b;
   margin-bottom: 20px;
   height: 100%;
   &__title {
@@ -63,7 +62,7 @@
       content: '';
       width: calc(100% - 60px);
       height: 7px;
-      background-color: #95C4CE;
+      background-color: #2e5962;
       position: absolute;
       top: -10px;
       left: 30px;

@@ -148,8 +148,7 @@ button {
 }
 
 .card {
-  background-color: #fff;
-  color: #161821;
+  background-color: #181a1b;
   margin-bottom: 20px;
   height: 100%;
 }
@@ -177,7 +176,7 @@ button {
   content: '';
   width: calc(100% - 60px);
   height: 7px;
-  background-color: #95C4CE;
+  background-color: #2e5962;
   position: absolute;
   top: -10px;
   left: 30px;
@@ -249,7 +248,7 @@ button {
 }
 
 .bg-color--gray {
-  background-color: #e6e6e6;
+  background-color: #26292b;
 }
 
 /*********************
@@ -276,7 +275,7 @@ button {
   line-height: 1.75;
   text-align: center;
   padding: 9px 20px;
-  background-color: #91ACD1;
+  background-color: #2b4466;
   margin: 0 -20px 20px -20px;
 }
 
@@ -286,7 +285,7 @@ button {
 }
 
 .section-title--keycolorlight {
-  background-color: #91ACD1;
+  background-color: #2b4466;
 }
 
 .section-title--keycolorlight .section-title__stage {
@@ -294,7 +293,7 @@ button {
 }
 
 .section-title--keycolor {
-  background-color: #91ACD1;
+  background-color: #2b4466;
 }
 
 .section-title--story {
@@ -338,7 +337,7 @@ button {
   display: block;
   text-decoration: none;
   cursor: pointer;
-  background-color: #84A0C6;
+  background-color: #2b4466;
   color: #fff;
   font-size: 24px;
   line-height: 1.54167;
@@ -371,7 +370,7 @@ button {
 * header
 *****************/
 .header {
-  background-color: #e6e6e6;
+  background-color: #181a1b;
   height: 60px;
 }
 
@@ -408,6 +407,10 @@ button {
 
 .footer p:last-child {
   margin-bottom: 0;
+}
+
+.footer_ {
+  color: #161821;
 }
 
 /********************
