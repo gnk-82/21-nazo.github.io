@@ -79,7 +79,7 @@ button {
   display: block;
   border: none;
   margin: 0 auto;
-  background-color: #006837;
+  background-color: #2e5962;
   color: #fff;
   width: 287px;
   height: 55px;
@@ -240,7 +240,7 @@ button {
 * Color
 *********************/
 .bg-color--keycolor {
-  background-color: #91ACD1;
+  background-color: #1c243a;
 }
 
 .bg-color--subcolor {
@@ -459,6 +459,7 @@ button {
   text-align: center;
   display: block;
   margin-top: 20px;
+  color: #91ACD1;
 }
 
 .clear-message {
