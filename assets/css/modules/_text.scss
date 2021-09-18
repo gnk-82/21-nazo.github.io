@@ -46,14 +46,14 @@
   line-height: (32/30);
   margin: 0;
   padding-bottom: 15px;
-  color: #84A0C6;
+  color: #fff;
   &::after {
     position: absolute;
     bottom: 0;
     left: calc(50% - 95px);
     display: block;
     content: '';
-    background-color: #fff;
+    background-color: #161821;
     height: 2.6px;
     width: 190px;
   }
