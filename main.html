@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>並行世界の危機からの脱出</title>
+  <link rel='stylesheet' href='assets/css/normalize.css'>
+  <link rel='stylesheet' href='assets/css/style.css'>
+  <link rel='icon' href='assets/images/favicon.ico'>
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Stick&display=swap' rel='stylesheet'>
+</head>
+<body>
+  <svg width='0' height='0' class='hidden'>
+    <symbol xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12.47 24.94' id='arrow' class='arrow_svg'>
+      <title>arrow</title>
+      <polygon points='0 24.94 0 19.66 7.35 12.47 0 5.92 0 0 12.47 12.47 0 24.94'/>
+    </symbol>
+  </svg>
+  <header class='header'>
+    <div class='container'>
+      <div class='header__logo'><img src='assets/images/logo.svg' alt='チームロゴ'></div>
+    </div>
+  </header>
+  <main class='main main-page'>
+    <h1 class='main-title'><img src='assets/images/main-image.png' alt='並行世界の危機からの脱出'></h1>
+    <div id='stage'>
+      <div id='sectionStage1' class='stage'>
+        <section class='section'>
+          <div class='container'>
+            <h2 class='section-title section-title--keycolorlight'><span class='section-title__stage'>STAGE：1</h2>
+            <p class="text-center">家に帰ると、あなたのパソコンには一通のメールが届いていた。<br>
+              見知らぬ宛先からのメールを、警戒しながらも開いた貴方。<br>
+              文字化けした件名が書かれた、本文のないそのメールには一枚の画像が添付されており、<br>
+              画像には意味のわからないひらがなの文字列が書かれていた。<br>
+              文字化けしている件名を、文字化けを解読するソフトに解析させると、<br>
+              どうやらこのメールの件名には、もともと「この問題を解き、答えを送り返してください」<br>
+              というふうに書かれていたようだった。<br>
+              どうやらこのひらがなの文字列は「問題」らしい。<br>
+              最初は単なる迷惑メールかと思った貴方だったが、<br>
+              他にやることもなく、退屈だったこともあり、貴方は、ちょっとした気まぐれで、<br>
+              その問題を解いてみることにする。</p>
+            <div class="container">
+              <figure class="image__container">
+                <img src="assets/images/stage-1.png" alt="">
+              </figure>
+            </div>
+          </div>
+        </section>
+        <section class="section bg-color--keycolor">
+          <div class="container">
+            <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>キーワードを入力</h2>
+            <answer-input v-bind:correct="correctAnswer['stage1']['q1']" v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
+            <a class="link-hint" href="hint1.html" target="hint1">ヒントをみる</a>
+          </div>
+        </section>
+        <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
+          <div class="container">
+            <div class="clear-message">
+              <div class="clear-message__title">STAGE：１  クリア！</div>
+              <div class="clear-message__content">メールを開き、問題を解き、貴方は答えを送った。<br>
+                これで何か反応があったら面白いな、なんて思いながら、<br>
+                貴方はパソコンを閉じ、眠りについた。<br>
+                今思えば、この行動が、運命の分かれ道だった。<br>
+                次の日の朝、あなたの元に一通の動画が届く。</div>
+              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div v-if="next['stage1']" id="sectionStage2" class="stage">
+        <section>
+          <div class="section">
+            <div class="container">
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</h2>
+                <div class="youtube__container">
+                  <div class="youtube">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pUgZwBjI4sA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <p class="text-center">届いた動画は衝撃的な内容だった。<br>
+                  金星人？地球滅亡？考えれば考えるほど信じ難く思えるが、<br>
+                  少女が居たあの近未来的な施設や少女の緊迫した表情をみるに、嘘とは思えなかった。<br>
+                  あちらの地球を、そして、少女を救うため。<br>
+                  僕は、そのレナと名乗った少女から送られてきた問題を解き始めた。</p>
+                  <div class="container">
+                    <figure class="image__container">
+                      <img src="assets/images/stage-2.png" alt="">
+                    </figure>
+                  </div>
+            </div>
+          </div>
+          <div class="stage-column__container section bg-color--keycolor">
+            <div class="container">
+              <h2 class="section-title"><span class="section-title__stage">STAGE：2</span>キーワードを入力</h2>
+              <div class="row">
+                <div class="column">
+                  <answer-input v-bind:correct="correctAnswer['stage2']['q1']" v-on:answer-input="answerInput($event, 'stage2', 1)"></answer-input>
+                  <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}"  class="section section--clear bg-color--gray">
+          <div class="container">
+            <div class="clear-message">
+              <div class="clear-message__title">STAGE：2　クリア！</div>
+              <div class="clear-message__content">出てきた答えは「じゃくてんはれいき」<br>
+                答えをメールに打ち込み、レナに送った。<br>
+                あっているといいが…<br>
+                </div>
+                <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div v-if="next['stage2']" id="sectionStage3" class="stage">
+        <section class="section">
+          <div class="container">
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：</span>家庭科室の課題とは</h2>
+            <p class="text-center">黒板から得たメッセージは、「食物の廃棄問題」だった。<br>
+              どうやら、廃棄にかかる費用がかかりすぎて小学校の運営が厳しくなったようだ。。<br>
+              これらを解決するための最後の謎を解いていこう！</p>
+            <figure class="image__container">
+              <img src="assets/images/stage.png" alt="">
+            </figure>
+          </div>
+        </section>
+        <section class="section bg-color--keycolor">
+          <div class="container">
+            <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>キーワードを入力</h2>
+            <answer-input v-bind:correct="correctAnswer['stage3']['q1']" v-on:answer-input="answerInput($event, 'stage3', 1, 'final')"></answer-input>
+            <a class="link-hint" href="hint3.html" target="hint3">ヒントをみる</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class='footer section bg-color--gray'>
+    <div class='container'>
+      <p class='text-center'>主催／企画制作<br>モンゴル鹿空凸にょ革命</p>
+      <p class='text-center'>「リアル脱出ゲーム」は株式会社SCRAPの登録商標です。</p>
+    </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
